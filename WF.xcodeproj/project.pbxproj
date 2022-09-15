@@ -14,12 +14,22 @@
 		F52202C128D235BB0046115B /* WF.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F593F68928D22C55004A4198 /* WF.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F593F68D28D22C55004A4198 /* WF.h in Headers */ = {isa = PBXBuildFile; fileRef = F593F68C28D22C55004A4198 /* WF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F593F69428D22C71004A4198 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F593F69328D22C71004A4198 /* .gitignore */; };
+		F5B1703A28D3011F00B85AF8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F5B1703928D3011F00B85AF8 /* main.c */; };
+		F5B1703E28D3014100B85AF8 /* WF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F593F68928D22C55004A4198 /* WF.framework */; };
+		F5B1703F28D3014100B85AF8 /* WF.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F593F68928D22C55004A4198 /* WF.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F5ECDACB28D25C91005AD876 /* CHTTP.h in Headers */ = {isa = PBXBuildFile; fileRef = F5ECDAC928D25C91005AD876 /* CHTTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5ECDACC28D25C91005AD876 /* CHTTP.c in Sources */ = {isa = PBXBuildFile; fileRef = F5ECDACA28D25C91005AD876 /* CHTTP.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		F52202C228D235BB0046115B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F593F68028D22C55004A4198 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F593F68828D22C55004A4198;
+			remoteInfo = WF;
+		};
+		F5B1704028D3014100B85AF8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F593F68028D22C55004A4198 /* Project object */;
 			proxyType = 1;
@@ -49,6 +59,26 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F5B1703528D3011F00B85AF8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		F5B1704228D3014100B85AF8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F5B1703F28D3014100B85AF8 /* WF.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +89,8 @@
 		F593F68928D22C55004A4198 /* WF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F593F68C28D22C55004A4198 /* WF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WF.h; sourceTree = "<group>"; };
 		F593F69328D22C71004A4198 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F5B1703728D3011F00B85AF8 /* CHTTP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CHTTP; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5B1703928D3011F00B85AF8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		F5ECDAC928D25C91005AD876 /* CHTTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHTTP.h; sourceTree = "<group>"; };
 		F5ECDACA28D25C91005AD876 /* CHTTP.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CHTTP.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +108,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B1703428D3011F00B85AF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B1703E28D3014100B85AF8 /* WF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +143,7 @@
 				F593F69328D22C71004A4198 /* .gitignore */,
 				F593F68B28D22C55004A4198 /* WF */,
 				F52202B928D2355E0046115B /* WFT */,
+				F5B1703828D3011F00B85AF8 /* CHTTP */,
 				F593F68A28D22C55004A4198 /* Products */,
 				F52202BF28D235BB0046115B /* Frameworks */,
 			);
@@ -113,6 +154,7 @@
 			children = (
 				F593F68928D22C55004A4198 /* WF.framework */,
 				F52202B828D2355E0046115B /* WFT */,
+				F5B1703728D3011F00B85AF8 /* CHTTP */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +169,14 @@
 				F5ECDACA28D25C91005AD876 /* CHTTP.c */,
 			);
 			path = WF;
+			sourceTree = "<group>";
+		};
+		F5B1703828D3011F00B85AF8 /* CHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				F5B1703928D3011F00B85AF8 /* main.c */,
+			);
+			path = CHTTP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +232,25 @@
 			productReference = F593F68928D22C55004A4198 /* WF.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		F5B1703628D3011F00B85AF8 /* CHTTP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5B1703B28D3011F00B85AF8 /* Build configuration list for PBXNativeTarget "CHTTP" */;
+			buildPhases = (
+				F5B1703328D3011F00B85AF8 /* Sources */,
+				F5B1703428D3011F00B85AF8 /* Frameworks */,
+				F5B1703528D3011F00B85AF8 /* CopyFiles */,
+				F5B1704228D3014100B85AF8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5B1704128D3014100B85AF8 /* PBXTargetDependency */,
+			);
+			name = CHTTP;
+			productName = CHTTP;
+			productReference = F5B1703728D3011F00B85AF8 /* CHTTP */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,6 +264,9 @@
 						CreatedOnToolsVersion = 14.0;
 					};
 					F593F68828D22C55004A4198 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					F5B1703628D3011F00B85AF8 = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
@@ -214,6 +286,7 @@
 			targets = (
 				F593F68828D22C55004A4198 /* WF */,
 				F52202B728D2355E0046115B /* WFT */,
+				F5B1703628D3011F00B85AF8 /* CHTTP */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +320,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F5B1703328D3011F00B85AF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B1703A28D3011F00B85AF8 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -254,6 +335,11 @@
 			isa = PBXTargetDependency;
 			target = F593F68828D22C55004A4198 /* WF */;
 			targetProxy = F52202C228D235BB0046115B /* PBXContainerItemProxy */;
+		};
+		F5B1704128D3014100B85AF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F593F68828D22C55004A4198 /* WF */;
+			targetProxy = F5B1704028D3014100B85AF8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -441,6 +527,22 @@
 			};
 			name = Release;
 		};
+		F5B1703C28D3011F00B85AF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F5B1703D28D3011F00B85AF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -467,6 +569,15 @@
 			buildConfigurations = (
 				F593F69128D22C55004A4198 /* Debug */,
 				F593F69228D22C55004A4198 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5B1703B28D3011F00B85AF8 /* Build configuration list for PBXNativeTarget "CHTTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5B1703C28D3011F00B85AF8 /* Debug */,
+				F5B1703D28D3011F00B85AF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

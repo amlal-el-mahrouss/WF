@@ -1,3 +1,4 @@
+#ifdef __OBJC__
 
 #import <Foundation/Foundation.h>
 
@@ -8,4 +9,9 @@ FOUNDATION_EXPORT double WFVersionNumber;
 FOUNDATION_EXPORT const unsigned char WFVersionString[];
 
 #import <WF/HTTPObject.h>
-#import <WF/CHTTP.h>
+
+#else
+#pragma once
+#include <WF/CHTTP.h>
+#endif
+

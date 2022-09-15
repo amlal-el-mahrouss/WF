@@ -16,7 +16,7 @@ struct HTTPState
 {
     http_t sock;
     
-    int32_t domain;
+    uint32_t domain;
     struct sockaddr* addr;
     socklen_t addr_len;
     
@@ -40,6 +40,10 @@ ssize_t http_send(http_t sock, uint8_t* buf, size_t len);
 #define HTTP_VERSION_1 "HTTP/1.1"
 #define HTTP_GET "GET"
 #define HTTP_POST "POST"
+
+struct CHTTP_IPV4 { uint32_t a; uint16_t b; uint8_t c, d; };
+
+#define HTTP_IPV4(A, B, C, D) ((uint32_t)(16777216 * A) + (uint32_t)(65536 * B) + (uint32_t)(256 * C) + (uint32_t)(D * 1))
 
 struct CHTTPHeader
 {
