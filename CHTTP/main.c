@@ -3,8 +3,9 @@
 
 int main(int argc, const char * argv[])
 {
-    struct HTTPState* state = malloc(sizeof(struct HTTPState));
+    struct CHTTPState* state = malloc(sizeof(struct CHTTPState));
     state->domain = HTTP_IPV4(5, 39, 62, 5);
+    http_socket(state);
 
     return 0;
 }
